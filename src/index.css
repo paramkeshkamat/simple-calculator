@@ -1,13 +1,92 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #eee;
+  line-height: 1.4;
+}
+
+.App {
+  max-width: 320px;
+  width: 90vw;
+  margin: 50px auto;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.DisplayArea {
+  background-color: #504a40;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 100%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #fff;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+}
+.DisplayArea h4 {
+  height: 20px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 200;
+}
+.DisplayArea h2 {
+  height: 30px;
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  background-color: #504a40;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.btns button:first-child {
+  font-size: 25px;
+}
+.btns button:last-child {
+  grid-column: span 2;
+  border-radius: 50px;
+  width: 135px;
+  color: orange;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.btn {
+  outline: none;
+  cursor: pointer;
+  background-color: #504a40;
+  color: #eee;
+  border: none;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 7px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.Error {
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.Error svg {
+  margin-right: 10px;
+  position: relative;
+  top: 8px;
+  font-size: 30px;
 }
