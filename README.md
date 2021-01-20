@@ -1,4 +1,4 @@
-# simple-calculator
+# Simple Calculator
 Simple Calculator using React 🧮
 
 ### screenshot :
